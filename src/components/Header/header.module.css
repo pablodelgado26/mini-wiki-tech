@@ -1,0 +1,32 @@
+/* Estilos básicos para o header */
+.header {
+	width: 100%;
+	background-color: #222;
+	color: #fff;
+	padding: 16px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav {
+	display: flex;
+	gap: 24px;
+}
+
+.link{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+
+.link:hover {
+	color: #00b4d8;
+}
