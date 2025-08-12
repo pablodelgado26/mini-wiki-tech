@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Pesquisa Técnica — Frameworks, Bibliotecas de Estilo e Next.js 15
 
-## Getting Started
+---
 
-First, run the development server:
+## 1️⃣ Framework e Meta-framework
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📌 Definição
+- **Framework**: Estrutura base que fornece ferramentas, padrões e bibliotecas para acelerar o desenvolvimento.
+- **Meta-framework**: Framework construído sobre outro para adicionar funcionalidades e otimizações.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔹 Tipos e Exemplos
+- **Front-end**: React, Angular, Vue.js
+- **Back-end**: Express.js, Django, Laravel
+- **Full-stack**: Next.js, Nuxt.js, Remix
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### ✅ Prós
+- Agilidade no desenvolvimento
+- Boas práticas integradas
+- Grande comunidade e suporte
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ⚠️ Contras
+- Curva de aprendizado inicial
+- Limitação por convenções
+- Dependência das atualizações
 
-## Learn More
+### 🛠 Funcionalidades Principais
+- Estruturação de código
+- Componentização
+- Rotas e gerenciamento de estado
+- SSR (Server-side Rendering) e SSG (Static Site Generation)
 
-To learn more about Next.js, take a look at the following resources:
+### 💼 Uso no Mercado e Oportunidades
+- E-commerce, blogs, dashboards e SaaS
+- Oportunidades como dev front-end, full-stack e mobile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎯 Usado em Sala de Aula
+- **Next.js 15** (Meta-framework sobre React)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 2️⃣ Bibliotecas de Estilos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📌 Exemplos
+- **Tailwind CSS** — classes utilitárias rápidas e personalizáveis
+- **Bootstrap** — componentes prontos e responsivos
+- **Material UI (MUI)** — padrão Google Material Design
+- **Chakra UI** — componentes acessíveis e theming fácil
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ⭐ Escolha
+- **Tailwind CSS**
+  - 🔹 **Por que**: rápido, flexível, fácil de personalizar e combina bem com Next.js
+
+### ✅ Prós
+- Reduz tempo de desenvolvimento
+- Consistência visual
+- Grande comunidade
+
+### ⚠️ Contras
+- Classes longas no HTML/JSX
+- Requer adaptação para quem vem do CSS puro
+
+### 💼 Empresas que Usam
+- **Tailwind**: Vercel, Laravel
+- **Bootstrap**: Twitter, Lyft
+- **MUI**: Amazon, Spotify
+
+---
+
+## 3️⃣ Next.js 15
+
+### 💪 Pontos Fortes
+- Renderização híbrida (SSR, SSG, ISR)
+- Otimização de imagens e fontes
+- Rotas automáticas com App Router
+- Performance otimizada e SEO friendly
+
+### 🆕 Novidades (tendências recentes)
+- Melhorias no **App Router**
+- **Turbopack** mais rápido
+- **Server Actions** para lógica no servidor
+- Suporte aprimorado a **React Server Components**
+
+### 💡 Curiosidades
+- Criado pela **Vercel**
+- Usado por empresas pequenas e gigantes do mercado
+- Cresceu por unir React + otimizações prontas
+
+### 💼 Empresas Usuárias
+- TikTok
+- Twitch
+- Nike
+- Notion
+- Hulu
+
+### 🎯 Áreas de Atuação e Oportunidades
+- E-commerce
+- Portais de conteúdo
+- Dashboards
+- Plataformas SaaS
+- Aplicações PWA
+
+---
