@@ -3,7 +3,6 @@ import styles from './footer.module.css'
 export default function Footer() {
     return (
         <div className={styles.footer}>
-            <p className={styles.copyright}>© 2025 🖥️ Mini Wiki Tech. Todos os direitos reservados.</p>
             <div className={styles.listOfNames}>
                 <div className={styles.lineDiv  }>
                     <p className={styles.girlName}>Alexandra Versani</p>
