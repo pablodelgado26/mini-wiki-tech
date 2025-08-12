@@ -5,7 +5,7 @@ export default function Footer() {
         <div className={styles.footer}>
             <div className={styles.listOfNames}>
                 <div className={styles.lineDiv  }>
-                    <p className={styles.girlName}>Alexandra Versani</p>
+                    <p className={styles.girlName}>Alexandra Aversani</p>
                     <p className={styles.girlName}> Gabriela Moleta</p>
                 </div>
                 <div className={styles.lineDiv}>
