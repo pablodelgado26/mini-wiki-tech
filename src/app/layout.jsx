@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/page.jsx";
+import Footer from "@/components/Footer/page.jsx";
 // Configurar Google Fonts
 const inter = Inter({ 
     subsets: ["latin"],
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <main>{children}</main>
             </body>
+            <Footer />
         </html>
     );
 }
