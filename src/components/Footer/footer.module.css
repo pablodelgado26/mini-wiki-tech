@@ -1,36 +1,141 @@
 .footer {
     width: 100%;
-    background-color: #222;
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
-    padding: 32px 0;
+    padding: 24px 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 }
 
 .listOfNames {
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.teamContainer {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 700px;
 }
 
 .lineDiv {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    padding: 1rem;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
 }
 
 .boyName, 
 .girlName {
-    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.2px;
+    display: inline-block;
 }
 
-.girlName:hover {
-    color: rgb(206, 0, 206);
+.boyName::before,
+.girlName::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
 }
 
-.boyName:hover {
-    color: rgb(85, 85, 233);
+.footerInfo {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.projectInfo {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 15px 12px;
+    }
+    
+    .listOfNames {
+        font-size: 16px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .lineDiv {
+        gap: 1.5rem;
+        padding: 0.3rem;
+        flex-direction: column;
+    }
+    
+    .boyName, 
+    .girlName {
+        font-size: 13px;
+        padding: 3px 6px;
+        margin-bottom: 0.3rem;
+    }
+    
+    .projectInfo {
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lineDiv {
+        gap: 1rem;
+    }
+    
+    .boyName, 
+    .girlName {
+        font-size: 12px;
+    }
 }

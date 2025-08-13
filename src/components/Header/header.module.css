@@ -7,10 +7,6 @@
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 20px rgba(153, 81, 219, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
 }
 
 .logo {
