@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header/page.jsx";
 import Footer from "@/components/Footer/page.jsx";
+
 const roboto = localFont({
     src: [
         {
@@ -22,11 +23,15 @@ const roboto = localFont({
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR" className={roboto.variable}>
-            <Header />
+            <head>
+                <title>Mini Wiki Tech</title>
+                <link rel="icon" href="/icons/favicon.ico" />
+            </head>
             <body className={roboto.className}>
+                <Header />
                 <main>{children}</main>
+                <Footer />
             </body>
-            <Footer />
         </html>
     );
 }
