@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
+
     <main className={styles.main}>
       {/* Seção Hero */}
       <section className={styles.hero}>
@@ -85,5 +86,11 @@ export default function Home() {
         </p>
       </section>
     </main>
+
+    <div className={styles.container}>
+      <h1 className={styles.title}>💻 Mini Wiki Tech</h1>
+      
+    </div>
+
   )
 }

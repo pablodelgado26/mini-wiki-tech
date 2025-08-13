@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.listOfNames {
+    font-size: 19px;
+    text-align: center;
+    color: white;
+}
+
+.lineDiv {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.boyName, 
+.girlName {
+    transition: 0.3s ease;
+}
+
+.girlName:hover {
+    color: rgb(206, 0, 206);
+}
+
+.boyName:hover {
+    color: rgb(85, 85, 233);
+}
