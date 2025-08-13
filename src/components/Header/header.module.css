@@ -1,36 +1,127 @@
-/* Estilos básicos para o header */
 .header {
-	width: 100%;
-	background-color: #222;
-	color: #fff;
-	padding: 32px 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  width: 100%;
+ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 20px rgba(153, 81, 219, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 .logo {
-	font-size: 1.5rem;
-	font-weight: bold;
-	letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #fff;
 }
 
 .nav {
-	display: flex;
-	gap: 72px;
+  display: flex;
+  gap: 80px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.link{
-	color: #fff;
-	text-decoration: none;
-	font-size: 1.5rem;
-	transition: color 0.2s;
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
 }
 
 .link:hover {
-	color: #00b4d8;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -8px;
+  left: 50%;
+  background-color: #2e0392;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .item {
-    list-style: none;
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+}
+
+.container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .topics h2 {
+    font-size: 2.2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.8rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+  }
+  
+  .nav {
+    gap: 40px;
+  }
+  
+  .link {
+    font-size: 1.4rem;
+  }
 }
