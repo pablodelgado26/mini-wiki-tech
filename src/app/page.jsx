@@ -169,6 +169,22 @@ export default function Home() {
             </ul>
           </Card>
 
+          <Card title="3 Next.js 15">
+            <h4>O que é</h4>
+            <p>Next.js é um meta-framework baseado em React, criado pela <strong>Vercel</strong>, que oferece renderização híbrida, roteamento automático, otimização de imagens e outras funcionalidades para criar aplicações web rápidas e escaláveis.</p>
+            
+            <h4>Pontos Fortes</h4>
+            <ul>
+              <li><strong>Renderização Híbrida:</strong> suporta SSR (Server-Side Rendering), SSG (Static Site Generation) e ISR (Incremental Static Regeneration)</li>
+              <li><strong>Otimização Automática:</strong> imagens, fontes, scripts e CSS</li>
+              <li><strong>App Router:</strong> roteamento por arquivos com suporte a layouts e carregamento paralelo</li>
+              <li><strong>SEO Friendly:</strong> geração de conteúdo no servidor para melhor indexação</li>
+              <li><strong>Turbopack:</strong> compilador mais rápido para ambiente de desenvolvimento</li>
+            </ul>
+
+          
+          </Card>
+
 
         </div>
       </section>
