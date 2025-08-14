@@ -1,7 +1,6 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Card from '../components/Card/Card'
 
 export default function Home() {
   return (
@@ -84,140 +83,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className={styles.research}>
-        <h2>Pesquisa Técnica Detalhada</h2>
-        
-        <div className={styles.researchContent}>
-          <Card title="1 Framework e Meta-framework">
-            <h4>Definição</h4>
-            <p><strong>Framework:</strong> é um conjunto estruturado de ferramentas, bibliotecas, convenções e padrões que fornece uma base para o desenvolvimento de aplicações. Ele define como organizar o código e oferece soluções prontas para problemas comuns, evitando que o desenvolvedor tenha que "reinventar a roda".</p>
-            <p><strong>Meta-framework:</strong> é uma camada construída sobre um framework já existente, oferecendo recursos adicionais e convenções mais robustas para agilizar ainda mais o desenvolvimento. O meta-framework normalmente integra várias funcionalidades (como roteamento, renderização no servidor, otimização de imagens) de forma nativa.</p>
-            
-            <h4>Tipos e Exemplos</h4>
-            <ul>
-              <li><strong>Front-end:</strong> React, Angular, Vue.js — focados na interface do usuário</li>
-              <li><strong>Back-end:</strong> Express.js (Node.js), Django (Python), Laravel (PHP) — focados na lógica e dados do servidor</li>
-              <li><strong>Full-stack:</strong> Next.js (React), Nuxt.js (Vue.js), Remix (React), SvelteKit (Svelte) — abrangem tanto o lado do cliente quanto o do servidor</li>
-            </ul>
 
-            <h4>Prós</h4>
-            <ul>
-              <li>Aceleram o desenvolvimento com componentes e padrões prontos</li>
-              <li>Mantêm consistência no código e facilitam colaboração entre desenvolvedores</li>
-              <li>Comunidades ativas e abundância de documentação/tutoriais</li>
-              <li>Ferramentas de otimização e integração já inclusas</li>
-            </ul>
-
-            <h4>Contras</h4>
-            <ul>
-              <li>Curva de aprendizado para entender convenções e ferramentas</li>
-              <li>Algumas limitações por seguir as regras e estrutura impostas pelo framework</li>
-              <li>Dependência de atualizações e mudanças na biblioteca principal</li>
-            </ul>
-
-            <h4>Funcionalidades Principais</h4>
-            <ul>
-              <li>Roteamento de páginas e recursos</li>
-              <li>Componentização para reutilização de código</li>
-              <li>Gerenciamento de estado e dados</li>
-              <li>Ferramentas para SEO e performance</li>
-              <li>Integração com APIs e banco de dados</li>
-            </ul>
-
-            <h4>Uso no Mercado e Oportunidades</h4>
-            <p>E-commerces, sistemas internos, redes sociais, plataformas SaaS, dashboards. Alta demanda por desenvolvedores que dominem frameworks modernos. Salários mais competitivos para quem domina ferramentas amplamente usadas no mercado.</p>
-
-            <h4>Usado em Sala de Aula</h4>
-            <p><strong>Next.js 15</strong> será a base, por ser um meta-framework moderno que combina a flexibilidade do React com recursos avançados para produção.</p>
-          </Card>
-
-          <Card title="2 Bibliotecas de Estilos">
-            <h4>Definição</h4>
-            <p>Bibliotecas de estilos são conjuntos de classes, componentes e padrões visuais que facilitam a criação de interfaces. Elas podem ser baseadas em <strong>CSS puro</strong>, <strong>componentes pré-estilizados</strong> ou <strong>classes utilitárias</strong>.</p>
-            
-            <h4>Exemplos</h4>
-            <ul>
-              <li><strong>Tailwind CSS</strong> — classes utilitárias para criação de estilos de forma rápida e personalizada</li>
-              <li><strong>Bootstrap</strong> — componentes prontos e responsivos com grid system</li>
-              <li><strong>Material UI (MUI)</strong> — componentes React baseados no design system do Google</li>
-              <li><strong>Chakra UI</strong> — componentes acessíveis e fácil customização de temas</li>
-            </ul>
-
-            <h4>Escolha</h4>
-            <p><strong>Tailwind CSS</strong> - Escolhido por sua flexibilidade, rapidez e integração natural com projetos Next.js, permitindo personalizar completamente o visual sem ficar preso a estilos pré-definidos.</p>
-
-            <h4>Prós</h4>
-            <ul>
-              <li>Reduz tempo de desenvolvimento</li>
-              <li>Alto nível de personalização</li>
-              <li>Facilita a manutenção de um padrão visual consistente</li>
-              <li>Grande comunidade e documentação clara</li>
-            </ul>
-
-            <h4>Contras</h4>
-            <ul>
-              <li>Código HTML/JSX pode ficar poluído com muitas classes</li>
-              <li>Requer adaptação para quem está acostumado ao CSS tradicional</li>
-              <li>Nem sempre ideal para quem quer começar com componentes prontos</li>
-            </ul>
-
-            <h4>Empresas que Usam</h4>
-            <ul>
-              <li><strong>Tailwind:</strong> Vercel, Laravel, GitHub Copilot site</li>
-              <li><strong>Bootstrap:</strong> Twitter, Lyft</li>
-              <li><strong>MUI:</strong> Amazon, Spotify</li>
-            </ul>
-          </Card>
-
-          <Card title="3 Next.js 15">
-            <h4>O que é</h4>
-            <p>Next.js é um meta-framework baseado em React, criado pela <strong>Vercel</strong>, que oferece renderização híbrida, roteamento automático, otimização de imagens e outras funcionalidades para criar aplicações web rápidas e escaláveis.</p>
-            
-            <h4>Pontos Fortes</h4>
-            <ul>
-              <li><strong>Renderização Híbrida:</strong> suporta SSR (Server-Side Rendering), SSG (Static Site Generation) e ISR (Incremental Static Regeneration)</li>
-              <li><strong>Otimização Automática:</strong> imagens, fontes, scripts e CSS</li>
-              <li><strong>App Router:</strong> roteamento por arquivos com suporte a layouts e carregamento paralelo</li>
-              <li><strong>SEO Friendly:</strong> geração de conteúdo no servidor para melhor indexação</li>
-              <li><strong>Turbopack:</strong> compilador mais rápido para ambiente de desenvolvimento</li>
-            </ul>
-            <Card title="3 Next.js 15">
-            <h4>O que é</h4>
-            <p>Next.js é um meta-framework baseado em React, criado pela <strong>Vercel</strong>, que oferece renderização híbrida, roteamento automático, otimização de imagens e outras funcionalidades para criar aplicações web rápidas e escaláveis.</p>
-            
-            <h4>Pontos Fortes</h4>
-            <ul>
-              <li><strong>Renderização Híbrida:</strong> suporta SSR (Server-Side Rendering), SSG (Static Site Generation) e ISR (Incremental Static Regeneration)</li>
-              <li><strong>Otimização Automática:</strong> imagens, fontes, scripts e CSS</li>
-              <li><strong>App Router:</strong> roteamento por arquivos com suporte a layouts e carregamento paralelo</li>
-              <li><strong>SEO Friendly:</strong> geração de conteúdo no servidor para melhor indexação</li>
-              <li><strong>Turbopack:</strong> compilador mais rápido para ambiente de desenvolvimento</li>
-            </ul>
-
-            <h4>Novidades (tendências recentes)</h4>
-            <ul>
-              <li>Melhorias no <strong>App Router</strong></li>
-              <li><strong>Server Actions</strong> para executar lógica no servidor diretamente de componentes</li>
-              <li>Suporte aprimorado a <strong>React Server Components</strong></li>
-              <li>Integração mais simples com renderização em streaming</li>
-              <li>Turbopack mais estável e rápido</li>
-            </ul>
-
-            <h4>Curiosidades</h4>
-            <ul>
-              <li>Lançado em 2016</li>
-              <li>Cresceu rapidamente por unir React com recursos prontos para produção</li>
-              <li>Base de escolha para empresas que precisam de alta performance e escalabilidade</li>
-            </ul>
-           
-          </Card>
-
-          
-          </Card>
-
-
-        </div>
-      </section>
     </main>
   )
 }
