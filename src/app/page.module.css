@@ -171,6 +171,16 @@
     padding: 1rem;
   }
   
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero img {
+    width: 280px !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+  
   .hero h1 {
     font-size: 2rem;
   }
@@ -193,6 +203,31 @@
   
   .card {
     padding: 1.5rem;
+  }
+}
+
+/* Responsive para mobile muito pequeno */
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 1rem;
+  }
+  
+  .hero img {
+    width: 220px !important;
+    height: auto !important;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+  
+  .team {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
 

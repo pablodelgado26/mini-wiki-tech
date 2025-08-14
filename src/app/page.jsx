@@ -22,7 +22,7 @@ export default function Home() {
           <ul>
             <li>Vinícius Rocha</li>
             <li>Vitor Argeri</li>
-            <li>Alexandra Aversani</li>y
+            <li>Alexandra Aversani</li>
             <li>Pablo Delgado</li>
             <li>Vinícius Pereira</li>
             <li>Gabriela Moleta</li>
